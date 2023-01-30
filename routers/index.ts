@@ -1,7 +1,9 @@
 import Admin from "./children/admin";
+import User from "./children/user";
 
 export default [
 	Admin,
+	User,
 	{
 		path: "/login",
 		component: "./Login",
@@ -10,11 +12,10 @@ export default [
 	},
 	{
 		path: "/home",
-		component: "./Test",
-		layout: "top",
+		component: "@/pages/Test",
+		// layout: "top",
 		menuRender: false,
 	},
-
 	{
 		path: "/",
 		redirect: "admin",

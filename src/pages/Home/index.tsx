@@ -8,7 +8,7 @@ const HomePage: React.FC = () => {
 			username: "test",
 			password: "e10adc3949ba59abbe56e057f20f883e",
 		});
-		console.log(data);
+		// console.log(data);
 	};
 
 	const interErr = async () => {
@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
 			username: "test",
 			password: "e10adc3949ba59abbe56e057f20f883e",
 		});
-		console.log(data);
+		// console.log(data);
 	};
 	return (
 		<div className={styles.container}>

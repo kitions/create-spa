@@ -32,19 +32,26 @@ const Login = () => {
 						values.username === "test" &&
 						values.password === "e10adc3949ba59abbe56e057f20f883e"
 					) {
-						const data = await sendLogin({
-							username: values.username,
-							password: values.password,
-						});
+						setAdminCookie(
+							config.cookie_key,
+							"link-cookie",
+							2 * 24 * 3600 * 1000,
+						);
+						history.push("/admin");
 
-						if (ResultOK(data)) {
-							setAdminCookie(
-								config.cookie_key,
-								data.data.token,
-								2 * 24 * 3600 * 1000,
-							);
-							history.push("/home");
-						}
+						// const data = await sendLogin({
+						// 	username: values.username,
+						// 	password: values.password,
+						// });
+
+						// if (ResultOK(data)) {
+						// 	setAdminCookie(
+						// 		config.cookie_key,
+						// 		data.data.token,
+						// 		2 * 24 * 3600 * 1000,
+						// 	);
+						// 	history.push("/home");
+						// }
 					} else Notice.error("登录失败", "用户名或密码错误！");
 
 					return true;

@@ -90,22 +90,22 @@ export async function getInitialState(): Promise<{
 	token?: string;
 	currentUser?: IUserInfo; // 用户信息
 }> {
-	const fetchUserInfo = async () => {
-		try {
-			const info = await getUserInfo();
-			if (ResultOK(info)) {
-				return info.data;
-			}
-			return undefined;
-		} catch (error) {
-			history.push("/login");
-		}
-		return undefined;
-	};
-	const currentUser = await fetchUserInfo();
+	// const fetchUserInfo = async () => {
+	// 	try {
+	// 		const info = await getUserInfo();
+	// 		if (ResultOK(info)) {
+	// 			return info.data;
+	// 		}
+	// 		return undefined;
+	// 	} catch (error) {
+	// 		history.push("/login");
+	// 	}
+	// 	return undefined;
+	// };
+	// const currentUser = await fetchUserInfo();
 
 	return {
-		currentUser,
+		currentUser: undefined,
 		name: "admin",
 		token: getAdminCookie(config.cookie_key) || "",
 	};
