@@ -1,0 +1,10 @@
+/lambda/
+/scripts
+/config
+.history
+/routes
+public
+/build/dist
+.umi
+mock
+/node_modules/
