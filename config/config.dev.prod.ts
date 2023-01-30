@@ -11,8 +11,7 @@ export default defineConfig({
 			cookie_key: "admin_auth_token",
 			change_pwd: "target_page=edit_password",
 			api_host: "https://platform.aaa.cn",
-			upload_dir:
-				"https://platform.aaa.cn/appcenter/admin/upload_image_dir",
+			upload_dir: "https://platform.aaa.cn/appcenter/admin/upload_image_dir",
 		},
 	},
 });

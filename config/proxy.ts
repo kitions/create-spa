@@ -12,8 +12,8 @@ const { REACT_APP_ENV } = process.env;
 
 const GetAPPEnv =
 	REACT_APP_ENV === EnumAppENV.Prod
-		? "https://platform.smm.cn"
-		: "https://testplatform.smm.cn";
+		? "https://platform.aaa.cn"
+		: "https://testplatform.aaa.cn";
 
 // NOTE:: changeOrigin
 // 可以从 http 代理到 https
