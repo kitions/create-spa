@@ -1,7 +1,8 @@
 import React from 'react';
 import { Outlet } from '@umijs/max';
 
-const Layout = (props) =>{
+const Layout = () =>{
+
 	return (
 		<div>
 			wrapper :12312

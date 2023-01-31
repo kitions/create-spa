@@ -11,15 +11,23 @@ export default [
 		layout: false,
 	},
 	{
+		path: '/',
+		component: '@/layout/BasicLayout',
+		routes: [
+			{ path: '/list', component: './Test' },
+			{ path: '/admin', component: './Test' },
+		],
+	},
+	{
 		path: "/home",
 		component: "@/pages/Test",
 		// layout: "top",
 		menuRender: false,
 	},
-	{
-		path: "/",
-		redirect: "admin",
-	},
+	// {
+	// 	path: "/",
+	// 	redirect: "admin",
+	// },
 	{
 		title: '404',
 		path: '404',

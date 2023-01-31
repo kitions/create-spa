@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "max build",
 		"build:test": "cross-env REACT_APP_ENV=testbuild UMI_ENV=testbuild max build",
-		"build:prod": "cross-env REACT_APP_ENV=prod UMI_ENV=prod max build",
+		"build:prod": "cross-env REACT_APP_ENV=prod MOCK=none UMI_ENV=prod max build",
 		"dev": "rm -rf .umi && max dev",
 		"format": "prettier --cache --write .",
 		"postinstall": "max setup",
@@ -18,7 +18,7 @@
 		"setup": "max setup",
 		"start": "cross-env REACT_APP_ENV=dev UMI_ENV=testbuild npm run dev",
 		"start:test": "cross-env REACT_APP_ENV=testbuild UMI_ENV=testbuild max dev",
-		"start:prod": "cross-env REACT_APP_ENV=prod UMI_ENV=prod max dev"
+		"start:prod": "cross-env REACT_APP_ENV=prod MOCK=none UMI_ENV=prod max dev"
 	},
 	"dependencies": {
 		"@ant-design/icons": "^4.7.0",
@@ -27,6 +27,7 @@
 		"@umijs/max": "^4.0.26",
 		"antd": "^4.20.7",
 		"classnames": "^2.3.2",
+
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-router": "6.3.0"
@@ -35,6 +36,8 @@
 		"@types/react": "^18.0.0",
 		"@types/react-dom": "^18.0.0",
 		"@umijs/lint": "^4.0.27",
+		"mockjs": "^1.1.0",
+		"@types/mockjs": "^1.0.7",
 		"@umijs/preset-ant-design-pro": "^1.3.0",
 		"@umijs/preset-react": "^2.1.0",
 		"cross-env": "^7.0.0",
