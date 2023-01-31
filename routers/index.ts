@@ -11,11 +11,11 @@ export default [
 		layout: false,
 	},
 	{
-		path: '/',
-		component: '@/layout/BasicLayout',
+		path: "/",
+		component: "@/layout/BasicLayout",
 		routes: [
-			{ path: '/list', component: './Test' },
-			{ path: '/admin', component: './Test' },
+			{ path: "/list", component: "./Test" },
+			{ path: "/admina", component: "./Test" },
 		],
 	},
 	{
@@ -24,13 +24,9 @@ export default [
 		// layout: "top",
 		menuRender: false,
 	},
-	// {
-	// 	path: "/",
-	// 	redirect: "admin",
-	// },
 	{
-		title: '404',
-		path: '404',
-		component: '@/pages/404'
+		title: "404",
+		path: "404",
+		component: "@/pages/404",
 	},
 ];

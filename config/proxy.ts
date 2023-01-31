@@ -21,15 +21,15 @@ const GetAPPEnv =
 
 export default {
 	dev: {
-		"/admincenter": {
-			target: GetAPPEnv + "/admincenter/",
+		"/api": {
+			target: GetAPPEnv + "/api/",
 			changeOrigin: true,
-			pathRewrite: { "^/admincenter": "" },
+			pathRewrite: { "^/api": "" },
 		},
-		"/usercenter": {
-			target: GetAPPEnv + "/usercenter/",
-			changeOrigin: true,
-			pathRewrite: { "^/usercenter": "" },
-		},
+		// "/usercenter": {
+		// 	target: GetAPPEnv + "/usercenter/",
+		// 	changeOrigin: true,
+		// 	pathRewrite: { "^/usercenter": "" },
+		// },
 	},
 };

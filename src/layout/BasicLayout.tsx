@@ -1,14 +1,14 @@
-import React from 'react';
-import { Outlet } from '@umijs/max';
+import React from "react";
+import { Outlet } from "@umijs/max";
+import style from "./index.scss";
 
-const Layout = () =>{
-
+const Layout = () => {
 	return (
 		<div>
-			wrapper :12312
+			<div className={style.bg}>wrapper :12312</div>
 			<Outlet />
 		</div>
 	);
-}
+};
 
-export default Layout
+export default Layout;

@@ -7,21 +7,15 @@ import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { LoginForm, ProFormText } from "@ant-design/pro-components";
 import { history } from "@umijs/max";
 import { CSSProperties } from "react";
+import style from "./index.scss";
 
-const Styles: CSSProperties = {
-	backgroundColor: "white",
-	position: "absolute",
-	top: "50%",
-	left: "50%",
-	transform: "translate(-50%, -50%)",
-};
-
-const Login = () => {
+const Test = () => {
 	return (
-		<div style={Styles}>
-			123123
+		<div>
+			<div className={style.bg}>fsdfdsfffdsf</div>
+			1231231231212312312
 		</div>
 	);
 };
 
-export default Login;
+export default Test;
